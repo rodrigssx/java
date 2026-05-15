@@ -1,0 +1,15 @@
+class Responsavel extends Pessoa {
+
+    private Aluno aluno;
+
+    public Responsavel(String nome, String fone, String cpf, Aluno aluno) {
+
+        super(nome, fone, cpf);
+
+        this.aluno = aluno;
+    }
+
+    public void mostrarAluno() {
+        System.out.println("Responsável por: " + aluno.nome);
+    }
+}
